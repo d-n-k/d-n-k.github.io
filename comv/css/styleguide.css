@@ -1,0 +1,111 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(224,224,224);
+  box-sizing: border-box;
+  
+}
+header {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.hdr {
+  max-width: 940px;
+  position: relative;
+  margin: 0 auto;
+  height: 90px;
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+/*button*/
+.btnBlue {
+  background: rgb(47, 149, 200);
+  color: #ffffff;
+  padding: 5px 40px 5px 20px;
+  font: 20px/1.6em 'open sans';
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  position: relative;
+  
+ }
+.btnBlue:after {
+  content: "\25BA";
+  font-size: 0.6em;
+  position: absolute;
+  right: 10px;
+ }
+
+
+/*menu*/
+
+
+ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav:after {
+  clear: both;
+}
+.nav > li a {
+  background: #FFFFFF;
+  color:#565656;
+  display: block;
+  text-align: center;
+  line-height: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*width: 200px;*/
+
+}
+
+.nav > li > a {
+  font-weight: bold;
+  width: 100%;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #FCFCFC;
+  color: #3399CC;
+  box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  width: 100%;
+}
+
+.nav > li > ul {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  display: none;
+  position: absolute;
+  background: #FCFCFC;
+  top: 2em;
+  left: 0;
+  width: 100%;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul a {
+  background: #FCFCFC;
+  color: #585951;
+  width: 100%;
+}
+
+.nav ul a:hover,
+.nav ul a:focus {
+  color: #3399CC;
+}
+
+.nav > li:hover > ul {
+  display: block;
+  
+}
