@@ -69,12 +69,12 @@ h3 {
 .list {
   background-color: #FFFFFF ;
 }
-ul {
+.list ul {
   display: inline-block;
   margin: 0;
   padding: 0;
   position: relative;
-  font-size: 10px;
+  font-size: 0.625em;
   text-transform: uppercase;
   width: 100%;
   
@@ -245,11 +245,19 @@ p.secondary {
 
 .banners li {
   width: 150px;
+  height: 138px;
   margin: 0 auto;
   text-align: center;
   list-style: none;
   display: inline-block;
   padding: 20px 0;
+  font-size: 0.7em;
+  color: white;
+  text-transform: uppercase;
+}
+.banners ul {
+  padding-left: 0;
+
 }
 .banners:hover img {
   background-color: #3399CC;
@@ -299,7 +307,7 @@ input[type="search"] {
 
 /*Events*/
 .events li {
-  width: 300px;
+  width: 280px;
   list-style: none;
 }
 .events h3 {
@@ -315,8 +323,13 @@ input[type="search"] {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 10px 0 10px 10px;
+  margin: 0 10px 10px 0;
+  color: black;
+  
+}
+.happenningWraper .text:hover {
+  color: black;
   
 }
 .calendar:hover {
@@ -338,13 +351,14 @@ input[type="search"] {
   text-transform: none;
 }
 .day {
- font: 4.8em/68px 'open sans';
+ font: 3.2em/68px 'open sans';
  border-bottom: 1px dotted #fff;
  
 }
 .month {
-  font: 1.8em/33px 'open sans';
+  font: 1em/33px 'open sans';
   text-transform: uppercase;
+
 }
 .events li span {
   font-size: 1.8em;
