@@ -1,7 +1,7 @@
-html {
+.styleguide {
   background-color: rgb(224,224,224);
   box-sizing: border-box;
-  max-width: 940px;
+  max-width: 100%;
   margin: 0 auto;
   color: white;
   text-decoration: none;
@@ -23,6 +23,9 @@ header {
 h2 {
     font: 2.4em/42px 'open sans';
     line-height: 1;
+    text-align: left;
+    color: white;
+    margin: 0 auto;
     
 }
 /*h3*/
@@ -30,6 +33,10 @@ h2 {
 h3 {
     font: 1.6em/23px 'open sans';
     line-height: 1;
+    text-align: left;
+    color: white;
+    margin: 0 auto;
+    
     
 }
 
@@ -43,10 +50,12 @@ h3 {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   text-decoration: none;
   position: relative;
-   
+    
  }
  .btn {
   display: block;
+  text-align: left;
+  margin: 30px 0;
  }
 .btnBlue:after {
   content: "\25BA";
@@ -79,9 +88,12 @@ ul {
   float: left;
   list-style: none;
   display: block;
+  
  }
+
 ul > li {
   margin: 0;
+
 }
 
 .nav > li a {
@@ -93,7 +105,7 @@ ul > li {
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
-  font-family: arial;
+  text-align: left;
 }
 
 .nav > li > a {
@@ -101,6 +113,7 @@ ul > li {
   padding: 10px 10px 0px 10px;
   display: block;
   text-align: left;
+  width: 100%;
 
 }
 
@@ -121,16 +134,19 @@ ul > li {
   background: #FCFCFC;
   top: 45px;
   left: 0;
+  width: 100%;
   
 }
 
 .nav ul li {
   list-style: none;
+
 }
 
 .nav ul a {
   background: #FCFCFC;
   color: #585951;
+  width: 100%;
   
 }
 
@@ -141,8 +157,30 @@ ul > li {
 
 .nav > li:hover > ul {
   display: block;
+  width: 100%;
 }
 
+
+/*courusel indicators*/
+.carousel-indicators {
+z-index: 5;
+margin: 0;
+list-style: none;
+overflow: hidden;
+padding: 15px 0 97px;
+}
+.carousel-indicators li {
+background: #e5e5e5;
+color: #e5e5e5;
+font: 1em/11px Arial;
+text-align: center;
+float: left;
+margin-left: 7px;
+width: 11px;
+height: 11px;
+cursor: pointer;
+border-radius: 3px;
+}
 
 /*boxes*/
 .Box {
@@ -152,8 +190,9 @@ ul > li {
   border-radius: 8px;
   color: white;
   box-shadow: 0px 3px 3px 0px grey;
-  
+  margin: 15px 0;
   display: inline-block;
+  text-align: left;
   
 }
 .orange {
@@ -176,6 +215,7 @@ ul > li {
   margin: 0 auto;
   text-decoration: none;
   color: white;
+  vertical-align: middle;
 }
 .textBox {
   margin: 1.8em auto;
@@ -204,11 +244,12 @@ p.secondary {
 /*Big Icons*/
 
 .banners li {
-  width: 160px;
+  width: 150px;
   margin: 0 auto;
   text-align: center;
   list-style: none;
   display: inline-block;
+  padding: 20px 0;
 }
 .banners:hover img {
   background-color: #3399CC;
@@ -219,6 +260,8 @@ p.secondary {
   height: 2em;
   border: none;
   display: inline-block;
+  position: relative;
+
 
 }
 
@@ -228,6 +271,8 @@ input[type="search"] {
   height: 2em;
   border-radius: 5px;
   border: 1px solid #d2d2d2;
+
+  
   
 }
 
@@ -236,7 +281,9 @@ input[type="search"] {
   border: none;
   height: 20px;
   width: 20px;
-  float: right;
+  position: absolute;
+  top: 2px;
+  right: 0;
 }
 
 .searchbox .divider {
@@ -244,7 +291,9 @@ input[type="search"] {
   height: 20px;
   width: 20px;
   border: none;
-  float: right;
+  position: absolute;
+  top: 2px;
+  right: 13px;
 }
 
 
